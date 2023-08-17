@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Data Rest - API 테스트</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Data Rest - API 테스트</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.toyproject.boardproject.controller.html">com.toyproject.boardproject.controller</a> &gt; DataRestTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.753s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[api] 댓글 단건 조회</td>
+<td class="success">givenNothing_whenRequestingArticleCommentOneByOne_test()</td>
+<td class="success">0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[api] 게시글 -&gt; 댓글 리스트 조회</td>
+<td class="success">givenNothing_whenRequestingArticleCommentsFromArticle_test()</td>
+<td class="success">0.141s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[api] 댓글 리스트 조회</td>
+<td class="success">givenNothing_whenRequestingArticleComments_test()</td>
+<td class="success">0.304s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[api] 게시글 단건 조회</td>
+<td class="success">givenNothing_whenRequestingArticleOneByOne_test()</td>
+<td class="success">1.116s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[api] 게시글 리스트 조회</td>
+<td class="success">givenNothing_whenRequestingArticle_test()</td>
+<td class="success">0.139s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>06:14:27.304 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.toyproject.boardproject.controller.DataRestTest]: DataRestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+06:14:27.505 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.toyproject.boardproject.BoardProjectApplication for test class com.toyproject.boardproject.controller.DataRestTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2023-08-18T06:14:28.248+09:00  INFO 19768 --- [    Test worker] c.t.b.controller.DataRestTest            : Starting DataRestTest using Java 17.0.7 with PID 19768 (started by yuling in /Users/yuling/Desktop/공부/토이프로젝트/board-project)
+2023-08-18T06:14:28.251+09:00  INFO 19768 --- [    Test worker] c.t.b.controller.DataRestTest            : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-08-18T06:14:29.583+09:00  INFO 19768 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-18T06:14:29.665+09:00  INFO 19768 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2023-08-18T06:14:30.700+09:00  INFO 19768 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-18T06:14:30.853+09:00  INFO 19768 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-08-18T06:14:30.857+09:00  INFO 19768 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-08-18T06:14:31.481+09:00  INFO 19768 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T06:14:31.734+09:00  INFO 19768 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-08-18T06:14:31.757+09:00  INFO 19768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-18T06:14:32.242+09:00  INFO 19768 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cce10bc
+2023-08-18T06:14:32.244+09:00  INFO 19768 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-18T06:14:32.326+09:00  WARN 19768 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-08-18T06:14:32.730+09:00  INFO 19768 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-08-18T06:14:33.886+09:00  INFO 19768 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: 
+    alter table article_comment 
+       drop 
+       foreign key FKghmocqkgqs5tkmucf5putw64t
+Hibernate: 
+    drop table if exists article
+Hibernate: 
+    drop table if exists article_comment
+Hibernate: 
+    create table article (
+        created_at datetime(6) not null,
+        id bigint not null auto_increment,
+        modified_at datetime(6) not null,
+        created_by varchar(100) not null,
+        modified_by varchar(100) not null,
+        content varchar(10000) not null,
+        hashtag varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create table article_comment (
+        article_id bigint not null,
+        created_at datetime(6) not null,
+        id bigint not null auto_increment,
+        modified_at datetime(6) not null,
+        created_by varchar(100) not null,
+        modified_by varchar(100) not null,
+        content varchar(500) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    create index IDX571gx7oqo5xpmgocegaidlcu9 
+       on article (title)
+Hibernate: 
+    create index IDXai44fu6vaa28ebpydglnv7t3e 
+       on article (hashtag)
+Hibernate: 
+    create index IDXrmt77yibijtk4sarremr67saa 
+       on article (created_at)
+Hibernate: 
+    create index IDXjl4utii2etiocimt799wvtuvv 
+       on article (created_by)
+Hibernate: 
+    create index IDXpieqqnljv147sefofs56h25qx 
+       on article_comment (content)
+Hibernate: 
+    create index IDXh1jx107qecntcbcpc2vfb07ij 
+       on article_comment (created_at)
+Hibernate: 
+    create index IDXc6pa61djuf2o8xnceyyvtdbaq 
+       on article_comment (created_by)
+Hibernate: 
+    alter table article_comment 
+       add constraint FKghmocqkgqs5tkmucf5putw64t 
+       foreign key (article_id) 
+       references article (id)
+2023-08-18T06:14:34.256+09:00  INFO 19768 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-18T06:14:35.319+09:00 DEBUG 19768 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-08-18T06:14:35.441+09:00 DEBUG 19768 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2023-08-18T06:14:35.472+09:00 DEBUG 19768 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /api/explorer/**] in 'resourceHandlerMapping'
+2023-08-18T06:14:35.483+09:00 DEBUG 19768 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-08-18T06:14:35.519+09:00 DEBUG 19768 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 0 ResponseBodyAdvice
+2023-08-18T06:14:36.376+09:00  INFO 19768 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-08-18T06:14:36.377+09:00  INFO 19768 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-08-18T06:14:36.383+09:00  INFO 19768 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2023-08-18T06:14:36.405+09:00  INFO 19768 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 27 ms
+2023-08-18T06:14:36.487+09:00  INFO 19768 --- [    Test worker] c.t.b.controller.DataRestTest            : Started DataRestTest in 8.724 seconds (process running for 10.858)
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.created_at,
+        a1_0.created_by,
+        a1_0.hashtag,
+        a1_0.modified_at,
+        a1_0.modified_by,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+2023-08-18T06:14:37.512+09:00 DEBUG 19768 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/hal+json', given [*/*] and supported [application/hal+json]
+2023-08-18T06:14:37.520+09:00 DEBUG 19768 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [EntityModel { content: Article(id=1, title=Phasellus id sapien in sapien iaculis congue., content=In (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/articles/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryEntityController
+           Method = org.springframework.data.rest.webmvc.RepositoryEntityController#getItemResource(RootResourceInformation, Serializable, PersistentEntityResourceAssembler, HttpHeaders)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Last-Modified:&quot;Wed, 14 Jun 2023 00:08:15 GMT&quot;, Content-Type:&quot;application/hal+json&quot;]
+     Content type = application/hal+json
+             Body = {
+  &quot;createdAt&quot; : &quot;2023-01-13T07:04:23&quot;,
+  &quot;createdBy&quot; : &quot;Daphene&quot;,
+  &quot;modifiedAt&quot; : &quot;2023-06-14T09:08:15&quot;,
+  &quot;modifiedBy&quot; : &quot;Lucy&quot;,
+  &quot;title&quot; : &quot;Phasellus id sapien in sapien iaculis congue.&quot;,
+  &quot;content&quot; : &quot;In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.&quot;,
+  &quot;hashtag&quot; : &quot;Aquamarine&quot;,
+  &quot;_links&quot; : {
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articles/1&quot;
+    },
+    &quot;article&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articles/1&quot;
+    },
+    &quot;articleComments&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articles/1/articleComments&quot;
+    }
+  }
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.created_at,
+        a1_0.created_by,
+        a1_0.hashtag,
+        a1_0.modified_at,
+        a1_0.modified_by,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id=?
+Hibernate: 
+    select
+        a1_0.article_id,
+        a1_0.id,
+        a1_0.content,
+        a1_0.created_at,
+        a1_0.created_by,
+        a1_0.modified_at,
+        a1_0.modified_by 
+    from
+        article_comment a1_0 
+    where
+        a1_0.article_id=? 
+    order by
+        a1_0.id
+2023-08-18T06:14:37.786+09:00 DEBUG 19768 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/hal+json', given [*/*] and supported [application/hal+json]
+2023-08-18T06:14:37.792+09:00 DEBUG 19768 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CollectionModel { content: [EntityModel { content: ArticleComment(id=2, article=Article(id=1, title= (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/articles/1/articleComments
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController
+           Method = org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController#followPropertyReference(RootResourceInformation, Serializable, String, RepresentationModelAssemblers)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/hal+json&quot;]
+     Content type = application/hal+json
+             Body = {
+  &quot;_embedded&quot; : {
+    &quot;articleComments&quot; : [ {
+      &quot;createdAt&quot; : &quot;2023-03-15T02:55:37&quot;,
+      &quot;createdBy&quot; : &quot;Violante&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-04-26T01:24:37&quot;,
+      &quot;modifiedBy&quot; : &quot;Berton&quot;,
+      &quot;content&quot; : &quot;Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/2&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/2&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/2/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-08-20T14:28:38&quot;,
+      &quot;createdBy&quot; : &quot;Burgess&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-11-07T04:52:57&quot;,
+      &quot;modifiedBy&quot; : &quot;Humfried&quot;,
+      &quot;content&quot; : &quot;Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/55&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/55&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/55/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-04-25T00:40:00&quot;,
+      &quot;createdBy&quot; : &quot;Oralee&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-01-22T04:13:06&quot;,
+      &quot;modifiedBy&quot; : &quot;Saraann&quot;,
+      &quot;content&quot; : &quot;Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/82&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/82&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/82/article&quot;
+        }
+      }
+    } ]
+  },
+  &quot;_links&quot; : {
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articles/1/articleComments&quot;
+    }
+  }
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.article_id,
+        a2_0.id,
+        a2_0.content,
+        a2_0.created_at,
+        a2_0.created_by,
+        a2_0.hashtag,
+        a2_0.modified_at,
+        a2_0.modified_by,
+        a2_0.title,
+        a1_0.content,
+        a1_0.created_at,
+        a1_0.created_by,
+        a1_0.modified_at,
+        a1_0.modified_by 
+    from
+        article_comment a1_0 
+    join
+        article a2_0 
+            on a2_0.id=a1_0.article_id 
+    where
+        a1_0.id=?
+2023-08-18T06:14:37.850+09:00 DEBUG 19768 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/hal+json', given [*/*] and supported [application/hal+json]
+2023-08-18T06:14:37.851+09:00 DEBUG 19768 --- [    Test worker] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [EntityModel { content: ArticleComment(id=1, article=Article(id=11, title=Etiam justo., content=Duis  (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/articleComments/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryEntityController
+           Method = org.springframework.data.rest.webmvc.RepositoryEntityController#getItemResource(RootResourceInformation, Serializable, PersistentEntityResourceAssembler, HttpHeaders)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Last-Modified:&quot;Thu, 08 Jun 2023 05:24:37 GMT&quot;, Content-Type:&quot;application/hal+json&quot;]
+     Content type = application/hal+json
+             Body = {
+  &quot;createdAt&quot; : &quot;2023-02-09T03:15:29&quot;,
+  &quot;createdBy&quot; : &quot;Debor&quot;,
+  &quot;modifiedAt&quot; : &quot;2023-06-08T14:24:37&quot;,
+  &quot;modifiedBy&quot; : &quot;Ignaz&quot;,
+  &quot;content&quot; : &quot;In congue. Etiam justo. Etiam pretium iaculis justo.&quot;,
+  &quot;_links&quot; : {
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articleComments/1&quot;
+    },
+    &quot;articleComment&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articleComments/1&quot;
+    },
+    &quot;article&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articleComments/1/article&quot;
+    }
+  }
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.article_id,
+        a1_0.content,
+        a1_0.created_at,
+        a1_0.created_by,
+        a1_0.modified_at,
+        a1_0.modified_by 
+    from
+        article_comment a1_0 limit ?,
+        ?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.created_at,
+        a1_0.created_by,
+        a1_0.hashtag,
+        a1_0.modified_at,
+        a1_0.modified_by,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.created_at,
+        a1_0.created_by,
+        a1_0.hashtag,
+        a1_0.modified_at,
+        a1_0.modified_by,
+        a1_0.title 
+    from
+        article a1_0 
+    where
+        a1_0.id in (?,?,?,?,?,?,?,?,?,?)
+Hibernate: 
+    select
+        count(a1_0.id) 
+    from
+        article_comment a1_0
+2023-08-18T06:14:38.134+09:00 DEBUG 19768 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/hal+json', given [*/*] and supported [application/hal+json]
+2023-08-18T06:14:38.140+09:00 DEBUG 19768 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Writing [PagedModel { content: [EntityModel { content: ArticleComment(id=1, article=Article(id=11, title=Etia (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/articleComments
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryEntityController
+           Method = org.springframework.data.rest.webmvc.RepositoryEntityController#getCollectionResource(RootResourceInformation, DefaultedPageable, Sort, RepresentationModelAssemblers)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/hal+json&quot;]
+     Content type = application/hal+json
+             Body = {
+  &quot;_embedded&quot; : {
+    &quot;articleComments&quot; : [ {
+      &quot;createdAt&quot; : &quot;2023-02-09T03:15:29&quot;,
+      &quot;createdBy&quot; : &quot;Debor&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-06-08T14:24:37&quot;,
+      &quot;modifiedBy&quot; : &quot;Ignaz&quot;,
+      &quot;content&quot; : &quot;In congue. Etiam justo. Etiam pretium iaculis justo.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/1&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/1&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/1/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-03-15T02:55:37&quot;,
+      &quot;createdBy&quot; : &quot;Violante&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-04-26T01:24:37&quot;,
+      &quot;modifiedBy&quot; : &quot;Berton&quot;,
+      &quot;content&quot; : &quot;Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/2&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/2&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/2/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-03-16T17:17:11&quot;,
+      &quot;createdBy&quot; : &quot;Keslie&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-11-28T19:22:39&quot;,
+      &quot;modifiedBy&quot; : &quot;Hermy&quot;,
+      &quot;content&quot; : &quot;Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/3&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/3&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/3/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-02-28T08:53:32&quot;,
+      &quot;createdBy&quot; : &quot;Charlie&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-06-06T14:55:23&quot;,
+      &quot;modifiedBy&quot; : &quot;Christiana&quot;,
+      &quot;content&quot; : &quot;Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/4&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/4&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/4/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-09-14T18:24:19&quot;,
+      &quot;createdBy&quot; : &quot;Allyn&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-02-27T07:28:20&quot;,
+      &quot;modifiedBy&quot; : &quot;Daphene&quot;,
+      &quot;content&quot; : &quot;Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/5&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/5&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/5/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-03-26T10:29:22&quot;,
+      &quot;createdBy&quot; : &quot;Silvana&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-04-27T06:32:47&quot;,
+      &quot;modifiedBy&quot; : &quot;Pinchas&quot;,
+      &quot;content&quot; : &quot;Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/6&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/6&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/6/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-04-08T13:28:06&quot;,
+      &quot;createdBy&quot; : &quot;Brose&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-11-08T18:06:12&quot;,
+      &quot;modifiedBy&quot; : &quot;Miltie&quot;,
+      &quot;content&quot; : &quot;Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/7&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/7&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/7/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-04-05T19:50:25&quot;,
+      &quot;createdBy&quot; : &quot;Carlin&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-07-21T14:36:41&quot;,
+      &quot;modifiedBy&quot; : &quot;Scot&quot;,
+      &quot;content&quot; : &quot;Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/8&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/8&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/8/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-08-12T02:44:17&quot;,
+      &quot;createdBy&quot; : &quot;Brigida&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-01-25T12:47:40&quot;,
+      &quot;modifiedBy&quot; : &quot;Kandace&quot;,
+      &quot;content&quot; : &quot;Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/9&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/9&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/9/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-03-13T00:54:22&quot;,
+      &quot;createdBy&quot; : &quot;Darcy&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-02-10T15:53:38&quot;,
+      &quot;modifiedBy&quot; : &quot;Aldis&quot;,
+      &quot;content&quot; : &quot;Sed ante. Vivamus tortor. Duis mattis egestas metus.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/10&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/10&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/10/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-03-06T01:43:09&quot;,
+      &quot;createdBy&quot; : &quot;Adlai&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-03-22T15:48:08&quot;,
+      &quot;modifiedBy&quot; : &quot;Samara&quot;,
+      &quot;content&quot; : &quot;Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/11&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/11&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/11/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-01-31T19:08:53&quot;,
+      &quot;createdBy&quot; : &quot;Patricia&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-11-30T02:27:23&quot;,
+      &quot;modifiedBy&quot; : &quot;Batsheva&quot;,
+      &quot;content&quot; : &quot;Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/12&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/12&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/12/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-01-05T06:02:26&quot;,
+      &quot;createdBy&quot; : &quot;Reeva&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-07-05T22:12:50&quot;,
+      &quot;modifiedBy&quot; : &quot;Haleigh&quot;,
+      &quot;content&quot; : &quot;Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/13&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/13&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/13/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-11-26T10:31:22&quot;,
+      &quot;createdBy&quot; : &quot;Sybil&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-09-02T00:11:08&quot;,
+      &quot;modifiedBy&quot; : &quot;Laney&quot;,
+      &quot;content&quot; : &quot;Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/14&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/14&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/14/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-08-22T06:56:35&quot;,
+      &quot;createdBy&quot; : &quot;Federica&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-07-29T04:04:29&quot;,
+      &quot;modifiedBy&quot; : &quot;John&quot;,
+      &quot;content&quot; : &quot;In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/15&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/15&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/15/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-04-23T03:59:34&quot;,
+      &quot;createdBy&quot; : &quot;Lilyan&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-04-07T10:42:45&quot;,
+      &quot;modifiedBy&quot; : &quot;Nicky&quot;,
+      &quot;content&quot; : &quot;Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/16&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/16&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/16/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-09-25T18:38:30&quot;,
+      &quot;createdBy&quot; : &quot;Zared&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-06-23T18:05:51&quot;,
+      &quot;modifiedBy&quot; : &quot;Jere&quot;,
+      &quot;content&quot; : &quot;Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/17&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/17&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/17/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-08-31T17:51:52&quot;,
+      &quot;createdBy&quot; : &quot;Reece&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-04-20T19:51:59&quot;,
+      &quot;modifiedBy&quot; : &quot;Stephi&quot;,
+      &quot;content&quot; : &quot;Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/18&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/18&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/18/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-02-07T02:13:06&quot;,
+      &quot;createdBy&quot; : &quot;Katrina&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-06-13T20:54:26&quot;,
+      &quot;modifiedBy&quot; : &quot;Laurianne&quot;,
+      &quot;content&quot; : &quot;Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/19&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/19&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/19/article&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-06-02T16:34:48&quot;,
+      &quot;createdBy&quot; : &quot;Carolyn&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-06-03T04:26:37&quot;,
+      &quot;modifiedBy&quot; : &quot;Hi&quot;,
+      &quot;content&quot; : &quot;Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/20&quot;
+        },
+        &quot;articleComment&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/20&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articleComments/20/article&quot;
+        }
+      }
+    } ]
+  },
+  &quot;_links&quot; : {
+    &quot;first&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articleComments?page=0&amp;size=20&quot;
+    },
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articleComments?page=0&amp;size=20&quot;
+    },
+    &quot;next&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articleComments?page=1&amp;size=20&quot;
+    },
+    &quot;last&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articleComments?page=4&amp;size=20&quot;
+    },
+    &quot;profile&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/profile/articleComments&quot;
+    }
+  },
+  &quot;page&quot; : {
+    &quot;size&quot; : 20,
+    &quot;totalElements&quot; : 100,
+    &quot;totalPages&quot; : 5,
+    &quot;number&quot; : 0
+  }
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.content,
+        a1_0.created_at,
+        a1_0.created_by,
+        a1_0.hashtag,
+        a1_0.modified_at,
+        a1_0.modified_by,
+        a1_0.title 
+    from
+        article a1_0 limit ?,
+        ?
+Hibernate: 
+    select
+        count(a1_0.id) 
+    from
+        article a1_0
+2023-08-18T06:14:38.236+09:00 DEBUG 19768 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/hal+json', given [*/*] and supported [application/hal+json]
+2023-08-18T06:14:38.238+09:00 DEBUG 19768 --- [    Test worker] m.m.a.RequestResponseBodyMethodProcessor : Writing [PagedModel { content: [EntityModel { content: Article(id=1, title=Phasellus id sapien in sapien iacu (truncated)...]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/articles
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryEntityController
+           Method = org.springframework.data.rest.webmvc.RepositoryEntityController#getCollectionResource(RootResourceInformation, DefaultedPageable, Sort, RepresentationModelAssemblers)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/hal+json&quot;]
+     Content type = application/hal+json
+             Body = {
+  &quot;_embedded&quot; : {
+    &quot;articles&quot; : [ {
+      &quot;createdAt&quot; : &quot;2023-01-13T07:04:23&quot;,
+      &quot;createdBy&quot; : &quot;Daphene&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-06-14T09:08:15&quot;,
+      &quot;modifiedBy&quot; : &quot;Lucy&quot;,
+      &quot;title&quot; : &quot;Phasellus id sapien in sapien iaculis congue.&quot;,
+      &quot;content&quot; : &quot;In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.&quot;,
+      &quot;hashtag&quot; : &quot;Aquamarine&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/1&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/1&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/1/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-10-22T18:13:04&quot;,
+      &quot;createdBy&quot; : &quot;Bonni&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-11-11T18:01:36&quot;,
+      &quot;modifiedBy&quot; : &quot;Ernestus&quot;,
+      &quot;title&quot; : &quot;Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.&quot;,
+      &quot;content&quot; : &quot;Fusce consequat. Nulla nisl. Nunc nisl.&quot;,
+      &quot;hashtag&quot; : &quot;Aquamarine&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/2&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/2&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/2/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-09-12T23:36:47&quot;,
+      &quot;createdBy&quot; : &quot;Terrance&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-03-06T07:36:14&quot;,
+      &quot;modifiedBy&quot; : &quot;Henrik&quot;,
+      &quot;title&quot; : &quot;Phasellus in felis.&quot;,
+      &quot;content&quot; : &quot;Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.&quot;,
+      &quot;hashtag&quot; : &quot;Green&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/3&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/3&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/3/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-03-27T22:57:25&quot;,
+      &quot;createdBy&quot; : &quot;Pansy&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-09-05T14:40:12&quot;,
+      &quot;modifiedBy&quot; : &quot;Goddard&quot;,
+      &quot;title&quot; : &quot;Proin interdum mauris non ligula pellentesque ultrices.&quot;,
+      &quot;content&quot; : &quot;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.&quot;,
+      &quot;hashtag&quot; : &quot;Puce&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/4&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/4&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/4/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-09-13T13:21:18&quot;,
+      &quot;createdBy&quot; : &quot;Carleen&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-09-20T05:22:34&quot;,
+      &quot;modifiedBy&quot; : &quot;Leonerd&quot;,
+      &quot;title&quot; : &quot;Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.&quot;,
+      &quot;content&quot; : &quot;In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.&quot;,
+      &quot;hashtag&quot; : &quot;Turquoise&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/5&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/5&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/5/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-03-03T23:58:31&quot;,
+      &quot;createdBy&quot; : &quot;Smitty&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-08-17T12:53:42&quot;,
+      &quot;modifiedBy&quot; : &quot;Cathlene&quot;,
+      &quot;title&quot; : &quot;Integer non velit.&quot;,
+      &quot;content&quot; : &quot;Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.&quot;,
+      &quot;hashtag&quot; : &quot;Turquoise&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/6&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/6&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/6/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-10-08T07:01:27&quot;,
+      &quot;createdBy&quot; : &quot;Thorstein&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-03-26T11:39:50&quot;,
+      &quot;modifiedBy&quot; : &quot;Amos&quot;,
+      &quot;title&quot; : &quot;Cras pellentesque volutpat dui.&quot;,
+      &quot;content&quot; : &quot;Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.&quot;,
+      &quot;hashtag&quot; : &quot;Teal&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/7&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/7&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/7/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-06-19T06:30:20&quot;,
+      &quot;createdBy&quot; : &quot;Rheta&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-09-02T14:31:03&quot;,
+      &quot;modifiedBy&quot; : &quot;Kelly&quot;,
+      &quot;title&quot; : &quot;Integer non velit.&quot;,
+      &quot;content&quot; : &quot;Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.&quot;,
+      &quot;hashtag&quot; : &quot;Violet&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/8&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/8&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/8/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-01-07T18:05:58&quot;,
+      &quot;createdBy&quot; : &quot;Natty&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-02-08T10:24:09&quot;,
+      &quot;modifiedBy&quot; : &quot;Cedric&quot;,
+      &quot;title&quot; : &quot;In est risus, auctor sed, tristique in, tempus sit amet, sem.&quot;,
+      &quot;content&quot; : &quot;Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.&quot;,
+      &quot;hashtag&quot; : &quot;Mauv&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/9&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/9&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/9/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-05-22T08:40:40&quot;,
+      &quot;createdBy&quot; : &quot;Petunia&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-01-03T23:59:40&quot;,
+      &quot;modifiedBy&quot; : &quot;Heddi&quot;,
+      &quot;title&quot; : &quot;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&quot;,
+      &quot;content&quot; : &quot;Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.&quot;,
+      &quot;hashtag&quot; : &quot;Purple&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/10&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/10&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/10/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-08-07T04:15:23&quot;,
+      &quot;createdBy&quot; : &quot;Carol&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-04-29T03:27:17&quot;,
+      &quot;modifiedBy&quot; : &quot;Ernesta&quot;,
+      &quot;title&quot; : &quot;Etiam justo.&quot;,
+      &quot;content&quot; : &quot;Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.&quot;,
+      &quot;hashtag&quot; : &quot;Mauv&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/11&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/11&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/11/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-10-26T20:39:09&quot;,
+      &quot;createdBy&quot; : &quot;Doretta&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-02-22T02:00:40&quot;,
+      &quot;modifiedBy&quot; : &quot;Timothea&quot;,
+      &quot;title&quot; : &quot;Nam tristique tortor eu pede.&quot;,
+      &quot;content&quot; : &quot;Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.&quot;,
+      &quot;hashtag&quot; : &quot;Khaki&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/12&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/12&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/12/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-03-31T23:06:32&quot;,
+      &quot;createdBy&quot; : &quot;Kinsley&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-04-26T18:28:46&quot;,
+      &quot;modifiedBy&quot; : &quot;Olav&quot;,
+      &quot;title&quot; : &quot;Sed sagittis.&quot;,
+      &quot;content&quot; : &quot;Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.&quot;,
+      &quot;hashtag&quot; : &quot;Yellow&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/13&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/13&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/13/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-10-31T11:40:03&quot;,
+      &quot;createdBy&quot; : &quot;Gay&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-10-29T18:59:00&quot;,
+      &quot;modifiedBy&quot; : &quot;Maude&quot;,
+      &quot;title&quot; : &quot;In hac habitasse platea dictumst.&quot;,
+      &quot;content&quot; : &quot;Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.&quot;,
+      &quot;hashtag&quot; : &quot;Green&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/14&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/14&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/14/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-07-14T11:54:02&quot;,
+      &quot;createdBy&quot; : &quot;Annice&quot;,
+      &quot;modifiedAt&quot; : &quot;2022-12-26T08:56:08&quot;,
+      &quot;modifiedBy&quot; : &quot;Fernande&quot;,
+      &quot;title&quot; : &quot;Aenean lectus.&quot;,
+      &quot;content&quot; : &quot;Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.&quot;,
+      &quot;hashtag&quot; : &quot;Crimson&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/15&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/15&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/15/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-09-28T11:19:18&quot;,
+      &quot;createdBy&quot; : &quot;Hastings&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-07-01T13:30:37&quot;,
+      &quot;modifiedBy&quot; : &quot;Kimmi&quot;,
+      &quot;title&quot; : &quot;Nulla nisl.&quot;,
+      &quot;content&quot; : &quot;Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.&quot;,
+      &quot;hashtag&quot; : &quot;Violet&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/16&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/16&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/16/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-07-25T08:19:24&quot;,
+      &quot;createdBy&quot; : &quot;Travus&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-04-19T16:16:55&quot;,
+      &quot;modifiedBy&quot; : &quot;Nomi&quot;,
+      &quot;title&quot; : &quot;Curabitur at ipsum ac tellus semper interdum.&quot;,
+      &quot;content&quot; : &quot;Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.&quot;,
+      &quot;hashtag&quot; : &quot;Goldenrod&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/17&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/17&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/17/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-12-02T00:33:53&quot;,
+      &quot;createdBy&quot; : &quot;Ramona&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-03-09T03:05:23&quot;,
+      &quot;modifiedBy&quot; : &quot;Farrand&quot;,
+      &quot;title&quot; : &quot;Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.&quot;,
+      &quot;content&quot; : &quot;Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.&quot;,
+      &quot;hashtag&quot; : &quot;Orange&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/18&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/18&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/18/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2023-02-02T19:33:43&quot;,
+      &quot;createdBy&quot; : &quot;Isaak&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-02-18T07:27:36&quot;,
+      &quot;modifiedBy&quot; : &quot;Calley&quot;,
+      &quot;title&quot; : &quot;Maecenas pulvinar lobortis est.&quot;,
+      &quot;content&quot; : &quot;Sed ante. Vivamus tortor. Duis mattis egestas metus.&quot;,
+      &quot;hashtag&quot; : &quot;Khaki&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/19&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/19&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/19/articleComments&quot;
+        }
+      }
+    }, {
+      &quot;createdAt&quot; : &quot;2022-11-18T07:47:45&quot;,
+      &quot;createdBy&quot; : &quot;Joyann&quot;,
+      &quot;modifiedAt&quot; : &quot;2023-06-12T04:33:47&quot;,
+      &quot;modifiedBy&quot; : &quot;Collete&quot;,
+      &quot;title&quot; : &quot;Etiam pretium iaculis justo.&quot;,
+      &quot;content&quot; : &quot;Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.&quot;,
+      &quot;hashtag&quot; : &quot;Yellow&quot;,
+      &quot;_links&quot; : {
+        &quot;self&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/20&quot;
+        },
+        &quot;article&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/20&quot;
+        },
+        &quot;articleComments&quot; : {
+          &quot;href&quot; : &quot;http://localhost/api/articles/20/articleComments&quot;
+        }
+      }
+    } ]
+  },
+  &quot;_links&quot; : {
+    &quot;first&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articles?page=0&amp;size=20&quot;
+    },
+    &quot;self&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articles?page=0&amp;size=20&quot;
+    },
+    &quot;next&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articles?page=1&amp;size=20&quot;
+    },
+    &quot;last&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/articles?page=1&amp;size=20&quot;
+    },
+    &quot;profile&quot; : {
+      &quot;href&quot; : &quot;http://localhost/api/profile/articles&quot;
+    }
+  },
+  &quot;page&quot; : {
+    &quot;size&quot; : 20,
+    &quot;totalElements&quot; : 30,
+    &quot;totalPages&quot; : 2,
+    &quot;number&quot; : 0
+  }
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at Aug 18, 2023, 6:14:38 AM</p>
+</div>
+</div>
+</body>
+</html>
