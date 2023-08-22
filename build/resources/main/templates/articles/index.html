@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>게시판 페이지</title>
 </head>
 <body>
-<header>
-    헤더삽입부
-    <hr>
-</header>
+<header th:replace="~{header :: header}"></header>
 <main>
     <form>
         <label for="search-type" hidden>유형</label>
@@ -24,15 +21,54 @@
         <button type="submit">검색</button>
     </form>
 
-    테이블
+    <table>
+        <thead>
+        <tr>
+            <th>제목</th>
+            <th>해시태그</th>
+            <th>작성자</th>
+            <th>작성일</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>첫 글</td>
+            <td>#java</td>
+            <td>it's me</td>
+            <td>2022-01-01</td>
+        </tr>
+        <tr>
+            <td>2 글</td>
+            <td>#spring</td>
+            <td>it's you</td>
+            <td>2022-01-02</td>
+        </tr>
+        <tr>
+            <td>세 글</td>
+            <td>#java</td>
+            <td>it's me</td>
+            <td>2022-03-01</td>
+        </tr>
 
-    네비게이션
+        </tbody>
+
+    </table>
+    <nav>
+        <table>
+            <tr>
+                <td>previous</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>next</td>
+
+            </tr>
+        </table>
+    </nav>
 
 </main>
-<footer>
-    <hr>
-    푸터삽입부
-</footer>
+<footer th:replace="footer :: footer"></footer>
 
 </body>
 </html>
