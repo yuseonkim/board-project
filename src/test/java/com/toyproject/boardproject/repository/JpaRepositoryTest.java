@@ -31,6 +31,7 @@ public class JpaRepositoryTest {
         this.articleCommentRepository = articleCommentRepository;
     }
 
+
     @DisplayName("select 테스트")
     @Test
     void givenTestData_whenSelecting_thenWorksFine(){
@@ -87,6 +88,8 @@ public class JpaRepositoryTest {
 
         // When
         assertThat(articleRepository.count()+1).isEqualTo(count);
+
+
 
         // Then
     }
