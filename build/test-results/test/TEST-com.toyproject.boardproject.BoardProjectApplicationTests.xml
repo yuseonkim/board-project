@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.toyproject.boardproject.BoardProjectApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-24T03:35:15" hostname="gim-yuseon-ui-MacBookPro-2.local" time="0.248">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.toyproject.boardproject.BoardProjectApplicationTests" time="0.248"/>
+  <system-out><![CDATA[12:35:03.739 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:35:03.758 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:35:03.821 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.toyproject.boardproject.BoardProjectApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:35:03.853 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.toyproject.boardproject.BoardProjectApplicationTests], using SpringBootContextLoader
+12:35:03.893 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.toyproject.boardproject.BoardProjectApplicationTests]: class path resource [com/toyproject/boardproject/BoardProjectApplicationTests-context.xml] does not exist
+12:35:03.898 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.toyproject.boardproject.BoardProjectApplicationTests]: class path resource [com/toyproject/boardproject/BoardProjectApplicationTestsContext.groovy] does not exist
+12:35:03.902 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.toyproject.boardproject.BoardProjectApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:35:03.910 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.toyproject.boardproject.BoardProjectApplicationTests]: BoardProjectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:35:04.155 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.toyproject.boardproject.BoardProjectApplicationTests]
+12:35:04.362 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/yuling/Desktop/공부/토이프로젝트/board-project/build/classes/java/main/com/toyproject/boardproject/BoardProjectApplication.class]
+12:35:04.365 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.toyproject.boardproject.BoardProjectApplication for test class com.toyproject.boardproject.BoardProjectApplicationTests
+12:35:04.706 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.toyproject.boardproject.BoardProjectApplicationTests]: using defaults.
+12:35:04.709 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+12:35:04.813 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@48c35007, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@72a85671, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6722db6e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@18f20260, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ae33a11, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a48e6e2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@b40bb6e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3a94964, org.springframework.test.context.event.EventPublishingTestExecutionListener@5049d8b2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6d0b5baf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@631e06ab, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a3591c5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@34a75079, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@346a361, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@107ed6fc]
+12:35:04.829 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3a320ade testClass = BoardProjectApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@64beebb7 testClass = BoardProjectApplicationTests, locations = '{}', classes = '{class com.toyproject.boardproject.BoardProjectApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@4ce1d6d0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7776ab, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@51acdf2e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3a0baae5, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53dbe163, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@7748410a], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.0)
+
+2023-08-24 12:35:06.227  INFO 57967 --- [    Test worker] c.t.b.BoardProjectApplicationTests       : Starting BoardProjectApplicationTests using Java 17.0.7 on gim-yuseon-ui-MacBookPro-2.local with PID 57967 (started by yuling in /Users/yuling/Desktop/공부/토이프로젝트/board-project)
+2023-08-24 12:35:06.229  INFO 57967 --- [    Test worker] c.t.b.BoardProjectApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2023-08-24 12:35:07.776  INFO 57967 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-08-24 12:35:07.862  INFO 57967 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2023-08-24 12:35:08.707  INFO 57967 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-08-24 12:35:08.783  INFO 57967 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-08-24 12:35:09.096  INFO 57967 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-08-24 12:35:09.258  INFO 57967 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-08-24 12:35:10.335  INFO 57967 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-08-24 12:35:10.355  INFO 57967 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+Hibernate: 
+    
+    alter table article_comment 
+       drop 
+       foreign key FKghmocqkgqs5tkmucf5putw64t
+Hibernate: 
+    
+    drop table if exists article
+Hibernate: 
+    
+    drop table if exists article_comment
+Hibernate: 
+    
+    create table article (
+       id bigint not null auto_increment,
+        created_at datetime(6) not null,
+        created_by varchar(100) not null,
+        modified_at datetime(6) not null,
+        modified_by varchar(100) not null,
+        content varchar(10000) not null,
+        hashtag varchar(255),
+        title varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table article_comment (
+       id bigint not null auto_increment,
+        created_at datetime(6) not null,
+        created_by varchar(100) not null,
+        modified_at datetime(6) not null,
+        modified_by varchar(100) not null,
+        content varchar(500) not null,
+        article_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: create index IDX571gx7oqo5xpmgocegaidlcu9 on article (title)
+Hibernate: create index IDXai44fu6vaa28ebpydglnv7t3e on article (hashtag)
+Hibernate: create index IDXrmt77yibijtk4sarremr67saa on article (created_at)
+Hibernate: create index IDXjl4utii2etiocimt799wvtuvv on article (created_by)
+Hibernate: create index IDXpieqqnljv147sefofs56h25qx on article_comment (content)
+Hibernate: create index IDXh1jx107qecntcbcpc2vfb07ij on article_comment (created_at)
+Hibernate: create index IDXc6pa61djuf2o8xnceyyvtdbaq on article_comment (created_by)
+Hibernate: 
+    
+    alter table article_comment 
+       add constraint FKghmocqkgqs5tkmucf5putw64t 
+       foreign key (article_id) 
+       references article (id)
+2023-08-24 12:35:11.974  INFO 57967 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-08-24 12:35:11.983  INFO 57967 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-08-24 12:35:13.908 DEBUG 57967 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-08-24 12:35:13.955  INFO 57967 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-08-24 12:35:14.035 DEBUG 57967 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-08-24 12:35:14.099 DEBUG 57967 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /api/explorer/**] in 'resourceHandlerMapping'
+2023-08-24 12:35:14.120 DEBUG 57967 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-08-24 12:35:15.405  INFO 57967 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2023-08-24 12:35:15.472  INFO 57967 --- [    Test worker] c.t.b.BoardProjectApplicationTests       : Started BoardProjectApplicationTests in 10.523 seconds (JVM running for 13.939)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

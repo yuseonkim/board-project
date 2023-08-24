@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Data Rest - API 테스트" tests="5" skipped="5" failures="0" errors="0" timestamp="2023-08-24T03:35:17" hostname="gim-yuseon-ui-MacBookPro-2.local" time="0.003">
+  <properties/>
+  <testcase name="[api] 게시글 단건 조회" classname="com.toyproject.boardproject.controller.DataRestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="[api] 게시글 -&gt; 댓글 리스트 조회" classname="com.toyproject.boardproject.controller.DataRestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="[api] 댓글 단건 조회" classname="com.toyproject.boardproject.controller.DataRestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="[api] 댓글 리스트 조회" classname="com.toyproject.boardproject.controller.DataRestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="[api] 게시글 리스트 조회" classname="com.toyproject.boardproject.controller.DataRestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
