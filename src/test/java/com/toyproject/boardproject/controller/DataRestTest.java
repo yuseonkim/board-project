@@ -41,7 +41,6 @@ public class DataRestTest {
     @DisplayName("[api] 게시글 단건 조회")
     @Test
     void givenNothing_whenRequestingArticleOneByOne_test() throws Exception {
-
         //Given
 
         //When & Then
